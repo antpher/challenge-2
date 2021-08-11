@@ -1,17 +1,17 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  * {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
-  
+ 
   body {
-    color: black;
+    color: white;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: darkslategray;
+    
   }
   header {
     padding: 20px 35px;
-    background-color: darkslategray;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,28 +20,24 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
     z-index: 9999;
   }
   header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: black;
+    color: white;
   }
   
   header a {
     text-decoration: none;
-    color: black;
+    color: white;
     background-color: transparent;
   }
 
   header a:hover {
     background: transparent;
-    color: white;
+    color: green;
     text-shadow: none;
   }
   
@@ -59,7 +55,7 @@
   
   header nav ul li a:hover {
     background: transparent;
-    color: white;
+    color: green;
     text-shadow: none;
   }
   
@@ -69,11 +65,12 @@
     font-size: 1.55vw;
   }
   .intro {
-    padding: 100px;
+    padding: 200px;
+
   }
   .intro p {
     line-height: 1.7;
-    color: black;
+    color: white;
     width: 89%;
     margin: 0 auto;
     font-size: 20px;
@@ -82,11 +79,15 @@
   }
 
   section {
-    padding: 60px;
+    padding: 100px;
   }
 
   .div-projects {
     place-content: center;
+  }
+
+  .info {
+    display: flex;
   }
 
   .projects {
@@ -95,7 +96,7 @@
     justify-content: space-between;
     position: relative;
     text-align: center;
-    color: black;
+    color: white;
   }
 
   /* Bottom left text */
@@ -103,11 +104,12 @@
   position: absolute;
   bottom: 8px;
   left: 16px;
+  background: transparent;
 }
 
   .section-title {
     font-size: 30px;
-    color: black;
+    color: white;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -116,8 +118,8 @@
 
   .contact {
     font-size: 20px;
-    color: black;
-    padding-bottom: 20px;
+    color: white;
+    padding-bottom: 10px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
@@ -129,7 +131,7 @@
 
   .contact a:hover {
     background: transparent;
-    color: white;
+    color: green;
     text-shadow: none;
   }
 
