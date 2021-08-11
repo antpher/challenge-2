@@ -35,7 +35,14 @@
   
   header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: black;
+    background-color: transparent;
+  }
+
+  header a:hover {
+    background: transparent;
+    color: white;
+    text-shadow: none;
   }
   
   header nav {
@@ -51,9 +58,8 @@
   }
   
   header nav ul li a:hover {
-    background: #cf871c;
-    color: #024e76;
-    border-radius: 15px;
+    background: transparent;
+    color: white;
     text-shadow: none;
   }
   
@@ -83,6 +89,22 @@
     place-content: center;
   }
 
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+  /* Bottom left text */
+  .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
   .section-title {
     font-size: 30px;
     color: black;
@@ -100,12 +122,14 @@
     margin: 0 auto 35px auto;
     width: 50%;
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .contact a:hover {
-    background: #cf871c;
-    color: #024e76;
-    border-radius: 15px;
+    background: transparent;
+    color: white;
     text-shadow: none;
   }
 
@@ -113,7 +137,6 @@
     text-decoration: none;
     color: var(--primary-color);
   }
-  
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
